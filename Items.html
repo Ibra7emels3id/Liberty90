@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>liberty</title>
+    <!-- icon title -->
+    <link rel="shortcut icon" href="upload/images/icon-04.png" type="image/x-icon">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- wow css -->
+    <link rel="stylesheet" href="libs/Wow/animate.css">
+    <!-- boot Strap css -->
+    <link rel="stylesheet" href="libs/BootStrap/bootstrap.min.css">
+    <!-- swiper slider css -->
+    <!-- <link rel="stylesheet" href="libs/swiper_slide/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Font Awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="libs/font_awesome/all.min.css"> -->
+
+</head>
+
+<body>
+    <!-- staer lader -->
+    <div class="Loader d-flex align-items-center justify-content-center">
+        
+    </div>
+
+    <!-- start header -->
+    <header style="background-image: url(/upload/images/heading-bg.jpg); height: 550px ;" class="d-flex align-items-center b-0 m-0">
+        <nav class="navbar  nav_bar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid px-3 position-relative">
+                <a class="navbar-brand" href="#"><img src="upload/images/logo.png" alt=""></a>
+                <button class="navbar-toggler position-absolute text-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="nav_link collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item p-1">
+                            <a class="nav-link  text-white " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link text-white " href="explore.html">Explore</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link text-white " href="Items.html">Items</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a  class="nav-link text-white " href="Author.html">Author</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link text-white " href="Create-Yours.html">Create Yours</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icon-shop mx-5 fs-2 text-end">
+                    <i id="icon-shop" class="fa-brands fa-shopify position-relative"><span class="count-card-shop d-flex text-white align-items-center justify-content-center position-absolute ">00</span></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- stert Show Add to Cards -->
+        <div class="AddToCardHtml position-fixed"  >
+            <div class="listProdect">
+                <div  class="card-shop">
+                    <!-- <div class="Out_box-shop ">
+                        <div class="in_box d-flex p-4 rounded-4 ">
+                            <div class="img">
+                                <img class=""  src="upload/images/market-01.jpg" alt="">
+                            </div>
+                            <div class="main_text w-100">
+                                <div class="title_text w-100">
+                                    <h4 class="fs-4 mb-3">Music Art Super Item</h4>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="title_text_User d-flex">
+                                            <div class="title_text_User_in_text">
+                                                <h6 class="p-0 m-0">Liberty Artist</h6>
+                                                <span class="fw-bold">@libertyart</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="">
+                                            <span class="m-0 p-0">2.03 ETH</span>
+                                            <span class="d-block m-0 p-0 text-end">($8,240.50)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text_details d-flex justify-content-between mt-3">
+                                    <div class="text-details_in-text d-flex justify-content-between">
+                                        <p class="m-0 p-0 fs-3">Price / 0000</p>
+                                    </div>
+                                    <div class="view-details-icon pb-0 d-flex justify-content-around">
+                                        <span class="count-shop d-flex align-items-center justify-content-center text-white fs-4">-</span>
+                                        <span class="mx-3">00</span>
+                                        <span class="count-shop d-flex align-items-center justify-content-center text-white fs-4">+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="buttonCard">
+                    <button class="Cancel Calsen" type="button">Cancel</button>
+                    <p class="total-price p-0 m-0 btn-Check-product-clik mx-3 btn-warning">00</p>
+                    <button class="ViewProdects " onclick="ViewProdectss()" type="button">View Prodects</button>
+                </div>
+            </div> 
+        </div>
+        <!-- End Show Add to Cards -->
+
+        <div class="main_header container ">
+            <div class="main_header_child d-flex flex-column align-items-center justify-content-center">
+                <p class="d-block text-white">Liberty NFT Market</p>
+                <h6 class="d-block fs-1 text-white fw-bold">VIEW ITEM DETAILS</h6>
+                <span class="d-block m-4 ">Home > <a class="text-white" href="Items.html">Items</a></span>
+                <div class="btn_link">
+                    <a class="btn text-white position-relative " href="">Explore Top NFTs</a>
+                    <a class="btn active text-white position-relative mx-3" href="">Watch Our Videos</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+
+    <!-- END ms Currently-->
+    <section>
+        <div class="ms_Currently pt-5 pb-5">
+            <div class="market_combonant_title container d-flex align-items-center justify-content-between mb-5">
+                <div class="text_title">
+                    <p class="m-0 p-0 position-relative pt-5 "></p>
+                    <h4 class="text-white"><span>Items</span> Currently In The Market.</h4>
+                </div>
+                <a class="btn fw-bold text-white " href="">Create Your NFT Now</a>
+            </div>
+            <div class="ms_Currently_Cards Add-product-html  row row-gap-3 mt-5 mb-5 w-100 m-auto container ">
+                <!-- <div class="Out_box col-lg-6 ">
+                    <div class="in_box d-flex p-4 rounded-4 ">
+                        <div class="img">
+                            <img class="rounded-5"  src="upload/images/market-01.jpg" alt="">
+                        </div>
+                        <div class="main_text w-100">
+                            <div class="title_text w-100 pb-3">
+                                <h4 class="fs-4 mb-3 text-white">Music Art Super Item</h4>
+                                <div class="title_text_User d-flex align-items-center ">
+                                    <img class="mx-3 rounded-circle" src="upload/images/author.jpg" alt="">
+                                    <div class="title_text_User_in_text">
+                                        <h6 class="text-white">Liberty Artist</h6>
+                                        <span class="fw-bold">@libertyart</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_details p-3 position-relative">
+                                <div class="text-details_in-text d-flex align-items-center mt-3 justify-content-between">
+                                    <div class="text-left lh-lg">
+                                        <h6 class="text-white ">Current Bid</h6>
+                                        <span class="d-block fs-5 text-white">2.03 ETH</span>
+                                        <span class="text-white ">($8,240.50)</span>
+                                    </div>
+                                    <div class="text-left lh-lg">
+                                        <h6 class="text-end text-white">Ends In</h6>
+                                        <span class="text-end text-white fs-5">4D 08H 15M 42S</span>
+                                        <span class="text-end text-white d-block">(July 24th, 2022)</span>
+                                    </div>
+                                </div>
+                                <div class="view-details-icon pt-5 pb-0 d-flex justify-content-around">
+                                    <i class="fa-solid fa-heart text-white fs-3"></i>
+                                    <i class="fa-solid fa-eye text-white fs-3"></i>
+                                    <i class="fa-solid fa-cart-plus fs-3 text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Out_box col-lg-6 ">
+                    <div class="in_box d-flex p-4 rounded-4 ">
+                        <div class="img">
+                            <img class="rounded-5"  src="upload/images/market-01.jpg" alt="">
+                        </div>
+                        <div class="main_text w-100">
+                            <div class="title_text w-100 pb-3">
+                                <h4 class="fs-4 mb-3 text-white">Music Art Super Item</h4>
+                                <div class="title_text_User d-flex align-items-center ">
+                                    <img class="mx-3 rounded-circle" src="upload/images/author.jpg" alt="">
+                                    <div class="title_text_User_in_text">
+                                        <h6 class="text-white">Liberty Artist</h6>
+                                        <span class="fw-bold">@libertyart</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_details p-3 position-relative">
+                                <div class="text-details_in-text d-flex align-items-center mt-3 justify-content-between">
+                                    <div class="text-left lh-lg">
+                                        <h6 class="text-white ">Current Bid</h6>
+                                        <span class="d-block fs-5 text-white">2.03 ETH</span>
+                                        <span class="text-white ">($8,240.50)</span>
+                                    </div>
+                                    <div class="text-left lh-lg">
+                                        <h6 class="text-end text-white">Ends In</h6>
+                                        <span class="text-end text-white fs-5">4D 08H 15M 42S</span>
+                                        <span class="text-end text-white d-block">(July 24th, 2022)</span>
+                                    </div>
+                                </div>
+                                <div class="view-details-icon pt-5 pb-0 d-flex justify-content-around">
+                                    <i class="fa-solid fa-heart text-white fs-3"></i>
+                                    <i class="fa-solid fa-eye text-white fs-3"></i>
+                                    <i class="fa-solid fa-cart-plus fs-3 text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Out_box col-lg-6 ">
+                    <div class="in_box d-flex p-4 rounded-4 ">
+                        <div class="img">
+                            <img class="rounded-5"  src="upload/images/market-01.jpg" alt="">
+                        </div>
+                        <div class="main_text w-100">
+                            <div class="title_text w-100 pb-3">
+                                <h4 class="fs-4 mb-3 text-white">Music Art Super Item</h4>
+                                <div class="title_text_User d-flex align-items-center ">
+                                    <img class="mx-3 rounded-circle" src="upload/images/author.jpg" alt="">
+                                    <div class="title_text_User_in_text">
+                                        <h6 class="text-white">Liberty Artist</h6>
+                                        <span class="fw-bold">@libertyart</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_details p-3 position-relative">
+                                <div class="text-details_in-text d-flex align-items-center mt-3 justify-content-between">
+                                    <div class="text-left lh-lg">
+                                        <h6 class="text-white ">Current Bid</h6>
+                                        <span class="d-block fs-5 text-white">2.03 ETH</span>
+                                        <span class="text-white ">($8,240.50)</span>
+                                    </div>
+                                    <div class="text-left lh-lg">
+                                        <h6 class="text-end text-white">Ends In</h6>
+                                        <span class="text-end text-white fs-5">4D 08H 15M 42S</span>
+                                        <span class="text-end text-white d-block">(July 24th, 2022)</span>
+                                    </div>
+                                </div>
+                                <div class="view-details-icon pt-5 pb-0 d-flex justify-content-around">
+                                    <i class="fa-solid fa-heart text-white fs-3"></i>
+                                    <i class="fa-solid fa-eye text-white fs-3"></i>
+                                    <i class="fa-solid fa-cart-plus fs-3 text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Out_box col-lg-6 ">
+                    <div class="in_box d-flex p-4 rounded-4 ">
+                        <div class="img">
+                            <img class="rounded-5"  src="upload/images/market-01.jpg" alt="">
+                        </div>
+                        <div class="main_text w-100">
+                            <div class="title_text w-100 pb-3">
+                                <h4 class="fs-4 mb-3 text-white">Music Art Super Item</h4>
+                                <div class="title_text_User d-flex align-items-center ">
+                                    <img class="mx-3 rounded-circle" src="upload/images/author.jpg" alt="">
+                                    <div class="title_text_User_in_text">
+                                        <h6 class="text-white">Liberty Artist</h6>
+                                        <span class="fw-bold">@libertyart</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_details p-3 position-relative">
+                                <div class="text-details_in-text d-flex align-items-center mt-3 justify-content-between">
+                                    <div class="text-left lh-lg">
+                                        <h6 class="text-white ">Current Bid</h6>
+                                        <span class="d-block fs-5 text-white">2.03 ETH</span>
+                                        <span class="text-white ">($8,240.50)</span>
+                                    </div>
+                                    <div class="text-left lh-lg">
+                                        <h6 class="text-end text-white">Ends In</h6>
+                                        <span class="text-end text-white fs-5">4D 08H 15M 42S</span>
+                                        <span class="text-end text-white d-block">(July 24th, 2022)</span>
+                                    </div>
+                                </div>
+                                <div class="view-details-icon pt-5 pb-0 d-flex justify-content-around">
+                                    <i class="fa-solid fa-heart text-white fs-3"></i>
+                                    <i class="fa-solid fa-eye text-white fs-3"></i>
+                                    <i class="fa-solid fa-cart-plus fs-3 text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Out_box col-lg-6 ">
+                    <div class="in_box d-flex p-4 rounded-4 ">
+                        <div class="img">
+                            <img class="rounded-5"  src="upload/images/market-01.jpg" alt="">
+                        </div>
+                        <div class="main_text w-100">
+                            <div class="title_text w-100 pb-3">
+                                <h4 class="fs-4 mb-3 text-white">Music Art Super Item</h4>
+                                <div class="title_text_User d-flex align-items-center ">
+                                    <img class="mx-3 rounded-circle" src="upload/images/author.jpg" alt="">
+                                    <div class="title_text_User_in_text">
+                                        <h6 class="text-white">Liberty Artist</h6>
+                                        <span class="fw-bold">@libertyart</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_details p-3 position-relative">
+                                <div class="text-details_in-text d-flex align-items-center mt-3 justify-content-between">
+                                    <div class="text-left lh-lg">
+                                        <h6 class="text-white ">Current Bid</h6>
+                                        <span class="d-block fs-5 text-white">2.03 ETH</span>
+                                        <span class="text-white ">($8,240.50)</span>
+                                    </div>
+                                    <div class="text-left lh-lg">
+                                        <h6 class="text-end text-white">Ends In</h6>
+                                        <span class="text-end text-white fs-5">4D 08H 15M 42S</span>
+                                        <span class="text-end text-white d-block">(July 24th, 2022)</span>
+                                    </div>
+                                </div>
+                                <div class="view-details-icon pt-5 pb-0 d-flex justify-content-around">
+                                    <i class="fa-solid fa-heart text-white fs-3"></i>
+                                    <i class="fa-solid fa-eye text-white fs-3"></i>
+                                    <i class="fa-solid fa-cart-plus fs-3 text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Out_box col-lg-6 ">
+                    <div class="in_box d-flex p-4 rounded-4 ">
+                        <div class="img">
+                            <img class="rounded-5"  src="upload/images/market-01.jpg" alt="">
+                        </div>
+                        <div class="main_text w-100">
+                            <div class="title_text w-100 pb-3">
+                                <h4 class="fs-4 mb-3 text-white">Music Art Super Item</h4>
+                                <div class="title_text_User d-flex align-items-center ">
+                                    <img class="mx-3 rounded-circle" src="upload/images/author.jpg" alt="">
+                                    <div class="title_text_User_in_text">
+                                        <h6 class="text-white">Liberty Artist</h6>
+                                        <span class="fw-bold">@libertyart</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_details p-3 position-relative">
+                                <div class="text-details_in-text d-flex align-items-center mt-3 justify-content-between">
+                                    <div class="text-left lh-lg">
+                                        <h6 class="text-white ">Current Bid</h6>
+                                        <span class="d-block fs-5 text-white">2.03 ETH</span>
+                                        <span class="text-white ">($8,240.50)</span>
+                                    </div>
+                                    <div class="text-left lh-lg">
+                                        <h6 class="text-end text-white">Ends In</h6>
+                                        <span class="text-end text-white fs-5">4D 08H 15M 42S</span>
+                                        <span class="text-end text-white d-block">(July 24th, 2022)</span>
+                                    </div>
+                                </div>
+                                <div class="view-details-icon pt-5 pb-0 d-flex justify-content-around">
+                                    <i class="fa-solid fa-heart text-white fs-3"></i>
+                                    <i class="fa-solid fa-eye text-white fs-3"></i>
+                                    <i class="fa-solid fa-cart-plus fs-3 text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+        </div>
+    </section>
+    <!-- END ms Currently -->
+
+    <!-- Start footer -->
+    <footer>
+        <div class="footer m-0 p-0 text-center p-4">
+            <h4 class="m-0 p-0 text-white fs-5">Copyright © 2024 Liberty NFT Marketplace Co., Ltd. All rights reserved.   Designed by TemplateMo</h4>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- swiper slider js -->
+    <!-- <script src="libs/swiper_slide/swiper-element-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- boot strap js -->
+    <script src="libs/BootStrap/bootstrap.bundle.min.js"></script>
+    <!-- wow js -->
+    <script src="libs/Wow/wow.min.js"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
